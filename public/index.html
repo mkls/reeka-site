@@ -13,13 +13,13 @@
             --color5: rgb(190, 182, 123);
         }
         body {
-            margin: 40px auto;
-            max-width: 1024px;
+            margin: 0;
+            padding: 0 15px;
             line-height: 1.6;
             font-size: 18px;
-            color: #444;
-            padding: 0 10px;
-            background-color: var(--main-bg-color)
+            font-family: sans-serif;
+            color: var(--color1);
+            background: rgb(218, 227, 233);
         }
         
         h1,
@@ -27,11 +27,58 @@
         h3 {
             line-height: 1.2
         }
+
+        .header {
+            height: 250px; 
+            background-image: url('pebbles_cropped.jpg');
+            background-repeat: no-repeat;
+            border-radius: 0px;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1024px;
+        }
+
+        .box-wrapper {
+            display: flex;
+        }
+
+        .box {
+            flex: 1 0 200px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+        <div class="header"></div>
+        <div class="box-wrapper">
+            <div class="box">
+                <h2>Bemutatkozás</h2>
+                <img src="profile-small.jpg" alt="Profil kép" style="max-width: 200px">
+                <p>Bla bla bla ....</p>
+            </div>
+            <div class="box">
+                <h2>Tanácsadás</h2>
+                <ul>
+                    <li>Hogyan zajlik a pszichológiai tanácsadás?</li>
+                    <li>Fontos gyakorlati tudnivalók</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Olvasnivaló</h2>
+                <ul>
+                    <li>Mindfulness</li>
+                    <li>Kognitiv technikák</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Kapcsolat</h2>
+                <p>Aki szeretne eljönni hazzám...</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
