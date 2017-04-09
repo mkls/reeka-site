@@ -1,0 +1,232 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    -webkit-transition: all 0.33s ease-in-out;
+    transition: all 0.33s ease-in-out;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+h1, h2.h3, h4, h5, h6 {
+  color: #7A7F82;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.5em;
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: 1.625em;
+  line-height: 1.38;
+}
+
+h4 {
+  font-size: 1.15em;
+  line-height: 1.38;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.05em;
+  color: #333;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  font-size: 1em;
+  line-height: 1.15;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  background-color: #fff;
+  line-height: 1.5;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Layout specific styles */
+.homepage-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    min-height: 250px;
+    padding: 1em;
+    background-image: url(/img/balaton.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 1024px) {
+    header {
+        height: 40vh;
+        background-attachment: fixed;
+    }
+}
+
+#logo {
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    float: left;
+    letter-spacing: 0.075em;
+    width: calc(100% - 30px);
+}
+
+@media (min-width: 1024px) {
+    #logo {
+        width: auto;
+    }
+}
+
+/* Top right navigation links */
+nav {
+    float: right;
+}
+
+nav li {
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    padding-left: 40px;
+}
+
+nav ul {
+    display: none;
+    position: absolute;
+    right: 10px
+}
+
+@media (min-width: 1024px) {
+    nav #burger-menu {
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+        position: static;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+}
+
+/* Homepage boxes */
+.homepage-boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+    .homepage-boxes {
+        flex-direction: row;
+    }
+}
+
+.homepage-box {
+    flex: 1 1 33%;
+    padding: 1em;
+}
+
+.homepage-box a {
+    color: rgb(69, 100, 114);
+    font-weight: bold;
+}
+
+.homepage-box h1, h2, h3 {
+    text-align: center;
+    color: #7a7f82;
+}
+
+/* Content */
+.self-pic {
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    background: url("/img/takarito.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+/* Kapcsolat */
+.kapcsolat {
+    padding: 1em;
+    background-color: rgb(69, 100, 114);
+}
+
+.kapcsolat h1, .kapcsolat h2, .kapcsolat p{
+    color: white;
+    text-align: center;
+}
+
+/* Contact button copy pasta */
+.contact-button {
+    border: 2px white solid;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+@media (min-width: 12.5em) {
+  .contact-button {
+    padding: 1em;
+    width: 70%;
+    margin-top: 1.5em;
+  }
+}
+
+@media (min-width: 30em) {
+  .contact-button {
+    width: 40%;
+  }
+}
+
+@media (min-width: 47.5em) {
+  .contact-button {
+    padding: 1em 3em;
+    width: 30%;
+  }
+}
+
+@media (min-width: 63em) {
+  .contact-button {
+    width: 20%;
+    margin-top: 2em;
+  }
+}
+
+.contact-button:hover {
+  background-color: #fff;
+  color: #7a7f82;
+}
