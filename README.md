@@ -7,6 +7,8 @@ npm install -g live-server
 then live-server from project repo
 
 npm i -g firebase-tools
+
+firebase login --interactive
 firebase deploy
 
 url:
