@@ -128,6 +128,24 @@ nav ul {
     right: 10px
 }
 
+@media (max-width: 1024px) {
+    #top-links {
+        background-color: white;
+        margin: 0;
+        padding: 1em;
+        border-radius: 1em;
+    }
+
+    #top-links li {
+        padding: 0;
+    }
+
+    #top-links a {
+        color: rgb(69, 100, 114);
+        color: #7a7f82;
+    }
+}
+
 @media (min-width: 1024px) {
     nav #burger-menu {
         display: none;
@@ -247,4 +265,3 @@ table td {
 .tanacsadas .homepage-box h3 {
     color: white;
 }
-

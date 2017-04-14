@@ -22,7 +22,9 @@ function goTo(anchor) {
 
 window.onpopstate = function (event) {
     var anchor = document.location.hash.slice(1)
-    $('html, body').animate({
-      scrollTop: $('[name=' + anchor + ']').offset().top
-    }, 800);
+    if (anchor) {
+        $('html, body').animate({
+        scrollTop: $('[name=' + anchor + ']').offset().top
+        }, 800);
+    }
 }
