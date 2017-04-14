@@ -91,7 +91,7 @@ header {
 
 @media (min-width: 1024px) {
     header {
-        height: 40vh;
+        height: 50vh;
         background-attachment: fixed;
     }
 }
@@ -226,3 +226,25 @@ table td {
 .homepage-container table {
     margin: 0 auto;
 }
+
+.tanacsadas {
+    background-color: #7a7f82;
+    color: white;
+}
+
+.tanacsadas p {
+    color: white;
+}
+
+.tanacsadas .homepage-box h1 {
+    color: white;
+}
+
+.tanacsadas .homepage-box h2 {
+    color: white;
+}
+
+.tanacsadas .homepage-box h3 {
+    color: white;
+}
+
