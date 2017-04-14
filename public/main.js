@@ -7,5 +7,13 @@ function toggleBurger() {
     }
 }
 
-document.getElementById('burger-menu')
-    .addEventListener('click', toggleBurger, false);
+// document.getElementById('burger-menu')
+//     .addEventListener('click', toggleBurger, false);
+
+function goTo(anchor) {
+    event.preventDefault()
+
+    $('html, body').animate({
+      scrollTop: $('[name=' + anchor + ']').offset().top
+    }, 800);
+}

@@ -17,7 +17,8 @@
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <script src="/js/main.js"></script>
+    <script src="/jquery-2.1.4.min.js"></script>
+    <script src="/main.js"></script>
 </head>
 
 <body>
@@ -26,20 +27,21 @@
             <div id="logo">Iván Réka <br>
             <span style="font-size: 26px;">egészségpszichológus<span></div>
             <nav>
-                <a href="#" id="burger-menu">
+                <a href="#" id="burger-menu" onclick="toggleBurger()">
                     <i class="fa fa-bars fa-2x"></i>
                 </a>
                 <ul id="top-links">
-                    <li><a href="#">Bemutatkozás</a></li>
-                    <li><a href="#">Tanácsadás</a></li>
-                    <li><a href="#">Árak</a></li>
-                    <li><a href="#">Kapcsolat</a></li>
+                    <li><a href="#bemutatkozas" onclick="goTo('bemutatkozas')">Bemutatkozás</a></li>
+                    <li><a href="#tanacsadas" onclick="goTo('tanacsadas')">Tanácsadás</a></li>
+                    <li><a href="#arak" onclick="goTo('arak')">Árak</a></li>
+                    <li><a href="#kapcsolat" onclick="goTo('kapcsolat')">Kapcsolat</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section class="homepage-container">
+        <a name="bemutatkozas"></a>
         <div class="homepage-box">
             <h2 class="port">Bemutatkozás</h2>
             <div class="self-pic"></div>
@@ -72,6 +74,7 @@
     </section>
 
     <section class="tanacsadas">
+        <a name="tanacsadas"></a>
         <div class="homepage-container">
             <div class="homepage-box">
                 <h2>Tanácsadás</h2>
@@ -125,6 +128,7 @@
     </section>
 
     <section class="homepage-container">
+        <a name="arak"></a>
         <div class="homepage-box">
             <h2 class="port">
                 Árak
@@ -145,6 +149,7 @@
     </section>
 
     <section class="kapcsolat">
+        <a name="kapcsolat"></a>
         <div class="homepage-container">
             <h2>Kapcsolat</h2>
             <p>
@@ -154,7 +159,7 @@
             <table>
                 <tr>
                     <td>Telefonon:</td>
-                    <td>+36709462332 (ha nem tudom felvenni, visszahívom)</td>
+                    <td>+36 70 946 2332 (ha nem tudom felvenni visszahívom)</td>
                 </tr>
                 <tr>
                     <td>E-mailen:</td>
@@ -179,6 +184,6 @@
         </div>
     </section>
 
-    <script src="/main.js"></script>
+    <!--<script src="/main.js"></script>-->
 </body>
 </html>
