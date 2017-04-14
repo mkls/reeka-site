@@ -73,7 +73,7 @@ body {
 
 /* Layout specific styles */
 .homepage-container {
-    max-width: 1024px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -87,7 +87,7 @@ header {
 
 @media (min-width: 1024px) {
     header {
-        height: 40vh;
+        height: 20vh;
         background-attachment: fixed;
     }
 }
@@ -164,6 +164,12 @@ nav ul {
 .homepage-box h1, h2, h3 {
     text-align: center;
     color: #7a7f82;
+}
+
+@media(min-width: 1024px) {
+    .homepage-box p {
+        text-align: justify
+    }
 }
 
 /* Content */
