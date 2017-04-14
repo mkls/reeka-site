@@ -13,3 +13,10 @@ firebase deploy
 
 url:
 https://reeka-acfa1.firebaseapp.com
+
+How to create a change:
+Modify file
+git add .
+git commit -m "Mi valtozott"
+git push origin HEAD
+firebase deploy

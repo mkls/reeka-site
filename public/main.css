@@ -85,9 +85,13 @@ header {
     background-size: cover;
 }
 
+.header-container {
+    max-width: none;
+}
+
 @media (min-width: 1024px) {
     header {
-        height: 20vh;
+        height: 40vh;
         background-attachment: fixed;
     }
 }
@@ -178,7 +182,7 @@ nav ul {
     margin: 0 auto;
     height: 200px;
     width: 200px;
-    background: url("/img/takarito.jpg") center center no-repeat;
+    background: url("/img/profile.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -196,43 +200,29 @@ nav ul {
 /* Contact button copy pasta */
 .contact-button {
     border: 2px white solid;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
     text-align: center;
     white-space: nowrap;
     font-weight: 600;
 }
 
-@media (min-width: 12.5em) {
-  .contact-button {
-    padding: 1em;
-    width: 70%;
-    margin-top: 1.5em;
-  }
-}
-
-@media (min-width: 30em) {
-  .contact-button {
-    width: 40%;
-  }
-}
-
-@media (min-width: 47.5em) {
-  .contact-button {
-    padding: 1em 3em;
-    width: 30%;
-  }
-}
-
-@media (min-width: 63em) {
-  .contact-button {
-    width: 20%;
-    margin-top: 2em;
-  }
-}
-
 .contact-button:hover {
   background-color: #fff;
   color: #7a7f82;
+}
+
+.temak {
+    list-style-type: circle;
+}
+
+table td {
+    color: white;
+    padding-left: 20px;
+}
+
+.homepage-container table {
+    margin: 0 auto;
 }
