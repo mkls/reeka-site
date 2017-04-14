@@ -19,4 +19,4 @@ Modify file
 git add .
 git commit -m "Mi valtozott"
 git push origin HEAD
-firebase deploy
+
