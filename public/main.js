@@ -16,4 +16,13 @@ function goTo(anchor) {
     $('html, body').animate({
       scrollTop: $('[name=' + anchor + ']').offset().top
     }, 800);
+
+    window.history.pushState(null, null, '#' + anchor)
+}
+
+window.onpopstate = function (event) {
+    var anchor = document.location.hash.slice(1)
+    $('html, body').animate({
+      scrollTop: $('[name=' + anchor + ']').offset().top
+    }, 800);
 }
